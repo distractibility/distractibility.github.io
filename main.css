@@ -271,17 +271,17 @@ h2 + figure {
   margin: 20px 5px 0 5px;
 }
 .project {
-  -webkit-filter: invert(100%) grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: invert(invert 100%) grayscale(100%);
+  -webkit-filter: saturate(60%); /* Safari 6.0 - 9.0 */
+  filter: saturate(60%);
   color: #bbb;
   margin-bottom: 30px;
   margin: 20px 10px 0 10px; // note the difference (10px gutters)
 }
 
 .image-link-item:hover {
-  -webkit-filter: invert(100%) hue-rotate(280deg)
+	-webkit-filter: saturate(100%)
     drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
-  filter: invert(100%) hue-rotate(280deg)
+  filter: saturate(100%)
     drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
   -webkit-box-shadow: 0px 0px 0px 20px #fff;
   -moz-box-shadow: 0px 0px 0px 20px #fff;
