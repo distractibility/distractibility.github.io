@@ -36,15 +36,22 @@ body {
   margin-bottom: 40px;
 }
 
+.content .description {
+  flex: 1 0 auto;
+  margin: 0 10px;
+}
+
 h1 {
   font-size: 45px;
-  color: #fff;
-  background: #000;
   display: inline;
 }
-.inverse {
-  color: #000;
-  background: none;
+.text-inverse {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  background: #000;
 }
 h1 small {
   font-size: 20px;
@@ -76,7 +83,7 @@ h4 {
   width: 100%;
 }
 .header img {
-	margin: 0;
+  margin: 0;
 }
 
 .header-image {
@@ -222,6 +229,8 @@ h2 + figure {
 }
 .portfolio-projects .content .container {
   margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer a:link,
@@ -256,7 +265,7 @@ h2 + figure {
   margin-bottom: 60px;
 }
 .projects {
-  margin: 0 -10px; // note the difference (10px gutters)
+  margin: 0 -20px; /* note the difference (20px gutters) */
 }
 .image-links div,
 .project-wrapper {
@@ -276,15 +285,12 @@ h2 + figure {
   -webkit-filter: saturate(60%); /* Safari 6.0 - 9.0 */
   filter: saturate(60%);
   color: #bbb;
-  margin-bottom: 30px;
-  margin: 20px 10px 0 10px; // note the difference (10px gutters)
+  margin: 20px 20px 30px 20px; /* note the difference (20px gutters) */
 }
 
 .image-link-item:hover {
-	-webkit-filter: saturate(100%)
-    drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
-  filter: saturate(100%)
-    drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
+  -webkit-filter: saturate(100%) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
+  filter: saturate(100%) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
   -webkit-box-shadow: 0px 0px 0px 20px #fff;
   -moz-box-shadow: 0px 0px 0px 20px #fff;
   box-shadow: 0px 0px 0px 20px #fff;
@@ -378,6 +384,10 @@ h2 + figure {
   .header-content {
     width: 520px;
   }
+
+  .content .description {
+    margin: 0 20px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -393,7 +403,7 @@ h2 + figure {
     max-width: 1200px;
   }
   .header-content .container {
-    width: 650px;
+    /* width: 650px; */
   }
   h2 {
     font-size: 28px;
@@ -401,5 +411,11 @@ h2 + figure {
 
   .container {
     width: 1200px;
+  }
+
+  /* text-heavy content is more readable at a restricted line width */
+  .longform {
+    width: 650px;
+    margin: auto;
   }
 }
