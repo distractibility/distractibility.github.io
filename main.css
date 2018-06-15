@@ -82,7 +82,7 @@ h4 {
   position: absolute;
   top: 0px;
   height: 240px; /* height of bg image */
-  background-image: url("./TODO.png");
+  background-image: url("./todo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -380,13 +380,15 @@ h2 + figure {
 
 @media (min-width: 1300px) {
   .header-image {
-    height: 530px; /* height of bg image */
-    background-image: url("./octoswirl.png");
+    height: 850px; /* height of header background image, see %%% */
+    /* background-image: url("./assets/distractibility_cartographers_1280.jpg"); */
   }
   .header-content {
     margin: auto;
-    margin-top: 220px;
+    margin-top: 870px; /* margin accounting for height of header background image, see %%% */
+    margin-top: 30px; /* overwriting above because we aren't using inset background image*/
     width: auto;
+    max-width: 1200px;
   }
   .header-content .container {
     width: 650px;
