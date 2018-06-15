@@ -73,10 +73,12 @@ h4 {
 }
 
 .header {
-  display: flex;
-  align-self: flex-start;
   width: 100%;
 }
+.header img {
+	margin: 0;
+}
+
 .header-image {
   width: 100%;
   position: absolute;
