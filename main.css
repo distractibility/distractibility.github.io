@@ -1,0 +1,401 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: Courier New, Courier6, monospace;
+  margin: 0;
+  color: #000;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 20px;
+  max-width: 1200px;
+}
+.section {
+  margin: 30px 0;
+}
+.section p b {
+  margin-right: 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  position: relative;
+}
+
+.content .container {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 45px;
+  color: #fff;
+  background: #000;
+  display: inline;
+}
+.inverse {
+  color: #000;
+  background: none;
+}
+h1 small {
+  font-size: 20px;
+}
+h1 a:link,
+h1 a:visited,
+h1 a:hover {
+  color: #fff;
+  border: none;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: #888;
+}
+.subtitle-inline {
+  margin-right: 12px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+}
+.header-image {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  height: 240px; /* height of bg image */
+  background-image: url("./TODO.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: -1;
+}
+.header-content {
+  margin: auto;
+  margin-top: 20px;
+}
+.header-content h1 {
+}
+
+.content {
+  margin-bottom: 100px;
+}
+
+.footer {
+  background-color: #000;
+  color: #999;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.footer-image {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  height: 400px;
+  width: 100%;
+  background-image: url("./TODO.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: -2;
+}
+@media (min-width: 800px) {
+  .footer-image {
+    background-image: url("./TODO.png");
+  }
+}
+
+p {
+  line-height: 1.7em;
+}
+
+img {
+  max-width: 100%;
+  margin: 1em 0;
+  vertical-align: middle;
+}
+figure {
+  margin: 1.5em 0 3em 0;
+}
+figure img {
+  margin: 0.5em 0;
+}
+figcaption {
+  text-align: center;
+  color: #444;
+  font-size: 0.9em;
+}
+
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #333;
+  border-bottom: 1px #333 dotted;
+}
+a:hover {
+  border-bottom: 1px #666666 solid;
+}
+a.anchor {
+  border: none;
+  color: #000;
+}
+
+a.button {
+  padding: 10px 20px;
+  border: 3px #999 solid;
+  cursor: pointer;
+}
+a.button:hover {
+  border: 3px #000 solid;
+}
+
+.portfolio .link-list {
+  padding-inline-start: 0;
+}
+
+p + .link-list {
+  margin-top: -10px;
+}
+
+.link-list {
+  display: block;
+  padding-inline-start: 20px;
+}
+.link-list li,
+a.blacklink {
+  background: #000;
+  color: #999;
+  display: inline-block;
+  padding: 4px 10px 2px 10px;
+  margin: 10px;
+}
+.link-list a,
+a.blacklink {
+  border: none;
+  color: #fff;
+}
+.link-list a:hover,
+.blacklink:hover {
+  color: #05ebb1;
+}
+
+h2 + figure {
+  margin-top: 20px;
+}
+
+.portfolio .content {
+  margin-top: 50px;
+}
+.portfolio .content .container {
+  margin-bottom: 120px;
+}
+.portfolio-projects .content .container {
+  margin-bottom: 60px;
+}
+
+.footer a:link,
+.footer a:visited {
+  color: #ccc;
+  border-bottom: 1px #aaa dotted;
+}
+
+.project img {
+  margin: 0;
+}
+.project p {
+  line-height: 1.2em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.image-links,
+.projects {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 -5px;
+  margin-bottom: 60px;
+}
+.projects {
+  margin: 0 -10px; // note the difference (10px gutters)
+}
+.image-links div,
+.project-wrapper {
+  -webkit-flex: 0 0 calc(100% / 3);
+  -ms-flex: 0 0 calc(100% / 3);
+  flex: 0 0 calc(100% / 3);
+  display: block;
+}
+.image-links div img {
+  margin: 0;
+}
+
+.image-links .image-link-item {
+  margin: 20px 5px 0 5px;
+}
+.project {
+  -webkit-filter: invert(100%) grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: invert(invert 100%) grayscale(100%);
+  color: #bbb;
+  margin-bottom: 30px;
+  margin: 20px 10px 0 10px; // note the difference (10px gutters)
+}
+
+.image-link-item:hover {
+  -webkit-filter: invert(100%) hue-rotate(280deg)
+    drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
+  filter: invert(100%) hue-rotate(280deg)
+    drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
+  -webkit-box-shadow: 0px 0px 0px 20px #fff;
+  -moz-box-shadow: 0px 0px 0px 20px #fff;
+  box-shadow: 0px 0px 0px 20px #fff;
+}
+.project:hover {
+  /*.project {*/
+  filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
+  color: #fff;
+  background: #222;
+  -webkit-box-shadow: 0px 0px 0px 15px #222;
+  -moz-box-shadow: 0px 0px 0px 15px #222;
+  box-shadow: 0px 0px 0px 15px #222;
+}
+.caption {
+  background: #14ffce;
+  color: #000;
+  text-align: center;
+  display: block;
+  line-height: 1.5em;
+}
+
+@media (min-width: 450px) {
+  .header-image {
+    height: 300px; /* height of bg image */
+    background-image: url("./TODO.png");
+  }
+  .header-content {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 580px) {
+  .portfolio p {
+    font-size: 14px;
+    line-height: 1.3em;
+  }
+  .portfolio figcaption {
+    font-size: 14px;
+  }
+  .portfolio .content {
+    margin-top: 20px;
+  }
+  .link-list {
+    padding-inline-start: 0;
+    margin-left: -10px;
+  }
+  .image-links div {
+    -webkit-flex: 0 0 calc(100% / 2);
+    -ms-flex: 0 0 calc(100% / 2);
+    flex: 0 0 calc(100% / 2);
+  }
+  .project-wrapper {
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .project {
+    filter: none;
+    color: #444;
+    margin-bottom: 40px;
+  }
+  .project:hover {
+    filter: none;
+    color: #555;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .portfolio-projects .content .container {
+    margin-bottom: 40px;
+  }
+  .projects {
+    margin: 0 -10px;
+  }
+  .portfolio-projects h2 {
+    font-size: 24px;
+  }
+  .portfolio-projects h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolio .header-image {
+    background: none;
+  }
+}
+
+@media (min-width: 580px) {
+  .header-content {
+    width: 520px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header-image {
+    height: 530px; /* height of bg image */
+    background-image: url("./octoswirl.png");
+  }
+  .header-content {
+    margin: auto;
+    margin-top: 220px;
+    width: auto;
+  }
+  .header-content .container {
+    width: 650px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 1200px;
+  }
+}
