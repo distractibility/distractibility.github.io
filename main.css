@@ -171,7 +171,14 @@ a:visited {
   border-bottom: 1px #333 dotted;
 }
 a:hover {
-  border-bottom: 1px #666666 solid;
+  border-bottom: 1px #333 solid;
+}
+.project:hover a {
+  color: #fff;
+  border-bottom: 1px #fff dotted;
+}
+.project:hover a:hover {
+  border-bottom: 1px #fff solid;
 }
 a.anchor {
   border: none;
