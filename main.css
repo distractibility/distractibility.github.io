@@ -17,7 +17,7 @@ body {
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .container {
@@ -75,7 +75,7 @@ h4 {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #888;
+  color: #4e4e4e;
 }
 .subtitle-inline {
   margin-right: 12px;
@@ -180,6 +180,9 @@ a:hover {
 .project:hover a {
   color: #fff;
   border-bottom: 1px #fff dotted;
+}
+.project:hover h4 {
+  color: #fff;
 }
 .project:hover a:hover {
   border-bottom: 1px #fff solid;
@@ -295,7 +298,7 @@ h2 + figure {
 .project {
   -webkit-filter: saturate(60%); /* Safari 6.0 - 9.0 */
   filter: saturate(60%);
-  color: #bbb;
+  color: #2f2f2f;
   margin: 20px 20px 30px 20px; /* note the difference (20px gutters) */
 }
 
