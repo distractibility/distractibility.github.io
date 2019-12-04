@@ -42,6 +42,9 @@ table td {
 table td.date-column {
 	font-style: italic;
 }
+table td.date-column.past {
+	text-decoration: line-through;
+}
 
 .content .container {
   margin-bottom: 40px;
