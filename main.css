@@ -36,6 +36,13 @@ body {
   position: relative;
 }
 
+table td {
+	padding-right: 2em;
+}
+table td.date-column {
+	font-style: italic;
+}
+
 .content .container {
   margin-bottom: 40px;
 }
