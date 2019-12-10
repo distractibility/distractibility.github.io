@@ -245,6 +245,7 @@ h2 + figure {
   margin-top: 20px;
 }
 
+.zine .content,
 .portfolio .content {
   margin-top: 50px;
 }
